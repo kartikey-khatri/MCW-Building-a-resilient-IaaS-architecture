@@ -1,5 +1,5 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
     "skuSizeVM": {
@@ -40,21 +40,21 @@
     },
     "adminUsername": {
       "type": "string",
-      "defaultValue": "demouser",
+      "defaultValue": "azureadmin",
       "metadata": {
         "description": "The name of the administrator account of the new VM and domain"
       }
     },
     "adminPassword": {
       "type": "securestring",
-      "defaultValue": "Demo!pass123",
+      "defaultValue": "9CLb6pkP$S&GVecE",
       "metadata": {
         "description": "The password for the administrator account of the new VM and domain"
       }
     },
     "domainName": {
       "type": "string",
-      "defaultValue": "contoso.com",
+      "defaultValue": "uniplastics.com",
       "metadata": {
         "description": "The FQDN of the Active Directory domain"
       }
@@ -68,11 +68,11 @@
     },
     "resourceFolder": {
       "type": "string",
-      "defaultValue": "master/Hands-on%20lab/Resources/"
+      "defaultValue": "Resources/"
     },
     "baseUri": {
       "type": "string",
-      "defaultValue": "https://raw.githubusercontent.com/microsoft/MCW-Building-a-resilient-IaaS-architecture/"
+      "defaultValue": "https://uniplasticstrg.blob.core.windows.net/resilient-architecture/"
     }
   },
   "variables": {
@@ -86,7 +86,7 @@
     "ADVMNicName": "[concat(parameters('ADVMName'), 'NIC')]",
     "scriptBase": "[concat(parameters('baseUri'), parameters('resourceFolder'), 'scripts/')]",
     "scriptFileName": "[if(parameters('newDomain'), 'deploy-advm-new.ps1', 'deploy-advm-existing.ps1')]",
-    "pauseFileName": "deploy-hold-vm-new.ps1",
+    "pauseFileName": "deploy-hold-vm.ps1",
     "pauseWait": 120,
     "scriptUrl": "[concat(variables('scriptBase'), variables('scriptFileName'))]",
     "pauseUrl": "[concat(variables('scriptBase'), variables('pauseFileName'))]",

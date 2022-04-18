@@ -16,7 +16,7 @@
     },
     "SQLVMName": {
       "type": "string",
-      "defaultValue": "SQLVM1",
+      "defaultValue": "prd-cu-db-vm-01",
       "minLength": 1
     },
     "AvailabilityZone": {
@@ -33,21 +33,21 @@
     },
     "adminUsername": {
       "type": "string",
-      "defaultValue": "demouser",
+      "defaultValue": "azureadmin",
       "metadata": {
         "description": "The name of the administrator account of the new VMs"
       }
     },
     "adminPassword": {
       "type": "securestring",
-      "defaultValue": "Demo!pass123",
+      "defaultValue": "9CLb6pkP$S&GVecE",
       "metadata": {
         "description": "The password for the administrator account of the new VMs"
       }
     },
     "domainToJoin": {
       "type": "string",
-      "defaultValue": "contoso.com",
+      "defaultValue": "uniplastics.com",
       "metadata": {
         "description": "Domain FQDN for VMs to join"
       }
@@ -61,11 +61,11 @@
     },
     "resourceFolder": {
       "type": "string",
-      "defaultValue": "master/Hands-on%20lab/Resources/"
+      "defaultValue": "Resources/"
     },
     "baseUri": {
       "type": "string",
-      "defaultValue": "https://raw.githubusercontent.com/microsoft/MCW-Building-a-resilient-IaaS-architecture/"
+      "defaultValue": "https://uniplasticstrg.blob.core.windows.net/resilient-architecture/"
     }
   },
   "variables": {
