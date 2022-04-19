@@ -1,5 +1,9 @@
 param($user, $password, $domain)
 
+$user = 'azureadmin'
+$password = '9CLb6pkP$S&GVecE'
+$domain = 'uniplastics.com'
+
 Start-Transcript  "C:\deploy-ad-log.txt"
 
 # Format data disk
