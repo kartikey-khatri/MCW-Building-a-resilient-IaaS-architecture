@@ -72,11 +72,11 @@
     },
     "resourceFolder": {
       "type": "string",
-      "defaultValue": "Resources/"
+      "defaultValue": "master/Hands-on%20lab/Resources/"
     },
     "baseUri": {
       "type": "string",
-      "defaultValue": "https://uniplasticstrg.blob.core.windows.net/resilient-architecture/"
+      "defaultValue": "https://raw.githubusercontent.com/kartikey-khatri/MCW-Building-a-resilient-IaaS-architecture/"
     }
   },
   "variables": {
