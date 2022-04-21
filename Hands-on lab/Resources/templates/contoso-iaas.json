@@ -23,7 +23,7 @@
         },
         "adminPassword": {
             "type": "securestring",
-            "defaultValue": "9CLb6pkP$S&GVecE",
+            "defaultValue": "9CLb6pkPS&GVecE",
             "metadata": {
                 "description": "The password for the administrator account of the new VM and domain"
             }
