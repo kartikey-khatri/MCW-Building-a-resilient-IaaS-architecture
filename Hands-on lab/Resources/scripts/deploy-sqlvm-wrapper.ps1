@@ -8,9 +8,9 @@ If (Test-Path "D:") {
 } else {
 	$script = "$env:temp\script.ps1"
 }
-Write-Output "Download $scripturl to $script"
-[Net.ServicePointManager]::SecurityProtocol = "Tls12"
-Invoke-WebRequest -URI $scripturl -OutFile $script
+# Write-Output "Download $scripturl to $script"
+# [Net.ServicePointManager]::SecurityProtocol = "Tls12"
+# Invoke-WebRequest -URI $scripturl -OutFile $script
 
 Write-Output "Create credential"
 $securePwd =  ConvertTo-SecureString "$password" -AsPlainText -Force
