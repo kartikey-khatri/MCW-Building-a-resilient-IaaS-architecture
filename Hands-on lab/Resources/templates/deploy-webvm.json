@@ -208,10 +208,10 @@
           "type": "extensions",
           "location": "[resourceGroup().location]",
           "apiVersion": "2015-06-15",
-          // "dependsOn": [
-          //   "[parameters('WebVMName')]",
-          //   "[resourceId('Microsoft.Compute/virtualMachines/extensions', parameters('WebVMName'), 'InstallWebApp')]"
-          // ],
+          "dependsOn": [
+            "[parameters('WebVMName')]",
+            "[resourceId('Microsoft.Compute/virtualMachines/extensions', parameters('WebVMName'), 'InstallWebApp')]"
+          ],
           "properties": {
             "publisher": "Microsoft.Compute",
             "type": "JsonADDomainExtension",
